@@ -1,1 +1,1 @@
-## NayKel's Prosper theme base on yoo_master2 theme
+## NayKel's Prosper theme for Joomla

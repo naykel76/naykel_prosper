@@ -1,7 +1,7 @@
 // Name:            Utility
 // Description:     Collection of useful utility classes to style your content
 //
-// Component:       `uk-container-*`
+// Component:       `container-*`
 //                  `uk-clearfix`
 //                  `uk-nbfc-*`
 //                  `uk-float-*`
@@ -70,17 +70,19 @@
 /* Container
  ========================================================================== */
 
-.uk-container {
+.container {
     box-sizing: border-box;
     max-width: @utility-container-max-width;
     padding: 0 @utility-container-padding-horizontal;
+    margin-left: auto;
+    margin-right: auto;
     .hook-container;
 }
 
 /* Large screen and bigger */
 @media (min-width: @breakpoint-xlarge) {
 
-    .uk-container {
+    .container {
         max-width: @utility-container-large-max-width;
         padding: 0 @utility-container-large-padding-horizontal;
     }
@@ -91,22 +93,13 @@
  * Micro clearfix
  */
 
-.uk-container:before,
-.uk-container:after {
+.container:before,
+.container:after {
     content: "";
     display: table;
 }
 
-.uk-container:after { clear: both; }
-
-/*
- * Center container
- */
-
-.uk-container-center {
-    margin-left: auto;
-    margin-right: auto;
-}
+.container:after { clear: both; }
 
 
 /* Clearing

@@ -20,7 +20,7 @@ $this['asset']->addFile('css', 'css:theme.css');
 
 <body class="uk-height-1-1 uk-vertical-align uk-text-center">
 
-	<div class="uk-vertical-align-middle uk-container-center">
+	<div class="uk-vertical-align-middle container-center">
 
 		<i class="tm-error-icon uk-icon-frown-o"></i>
 

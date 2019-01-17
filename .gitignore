@@ -6,3 +6,6 @@ node_modules/
 *.sublime-project
 *.sublime-workspace
 
+sftp-config.json
+project_tasks.md
+

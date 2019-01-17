@@ -1,5 +1,8 @@
-/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
-
-/* ========================================================================
-   Use this file to add custom CSS easily
- ========================================================================== */
+#nk-top-a,
+#nk-bottom-a {
+  background: #F77F00;
+}
+#nk-top-b,
+#nk-bottom-b {
+  background: #003049;
+}

@@ -26,7 +26,7 @@ $twofactormethods = UsersHelper::getTwoFactorMethods();
 
 <body class="uk-height-1-1 uk-flex uk-flex-middle uk-text-center">
 
-	<div class="tm-offline uk-panel uk-panel-box uk-vertical-align-middle uk-container-center">
+	<div class="tm-offline uk-panel uk-panel-box uk-vertical-align-middle container-center">
 
 		<jdoc:include type="message" />
 

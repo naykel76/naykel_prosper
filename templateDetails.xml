@@ -2,11 +2,11 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 1.7//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
 <extension version="2.5" type="template" client="site" method="upgrade">
 	<name>NayKel_Prosper</name>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<creationDate>January 2018</creationDate>
 	<author>Nathan Watts</author>
 	<authorEmail>nathan@</authorEmail>
-	<authorUrl>http://www.</authorUrl>
+	<authorUrl>http://www.naykel.com.au</authorUrl>
     <copyright>Copyright (C) NayKel</copyright>
     <license>http://www.gnu.org/licenses/gpl.html GNU/GPL</license>
 	<description>Naykel's Prosper theme, based on YOOtheme's Warp framework.</description>

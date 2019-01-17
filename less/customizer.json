@@ -750,9 +750,18 @@
             ]
         },
         {
+            "label": "nk Styles",
+            "vars": [
+                "@nk-color",
+                "@nk-primary-color",
+                "@nk-secondary-color",
+                "@nk-alt-color",
+                "@nk-footer-bg"
+            ]
+        },
+        {
             "label": "Typography",
             "vars": [
-                "@global-color",
                 "@global-muted-color",
 
                 "@global-link-color",
