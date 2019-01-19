@@ -2,8 +2,8 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 1.7//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
 <extension version="2.5" type="template" client="site" method="upgrade">
 	<name>NayKel_Prosper</name>
-	<version>1.0.1</version>
-	<creationDate>January 2018</creationDate>
+	<version>1.0.2</version>
+	<creationDate>January 2019</creationDate>
 	<author>Nathan Watts</author>
 	<authorEmail>nathan@</authorEmail>
 	<authorUrl>http://www.naykel.com.au</authorUrl>

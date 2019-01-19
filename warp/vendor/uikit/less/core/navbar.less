@@ -36,24 +36,23 @@
 // Variables
 // ========================================================================
 
-@navbar-background:                             #eee;
-@navbar-color:                                  #444;
+@navbar-background:                             @nk-primary-color; //nk
+
 @navbar-link-color:                             #07D;
 @navbar-link-hover-color:                       #059;
 
-@navbar-nav-height:                             40px;
+@navbar-nav-height:                             50px;
 @navbar-nav-line-height:                        @navbar-nav-height;
 @navbar-nav-padding-horizontal:                 15px;
-@navbar-nav-color:                              #444;
+@navbar-nav-color:                              #fff;
 @navbar-nav-font-size:                          14px;
 @navbar-nav-font-weight:                        normal;
-@navbar-nav-font-family:                        "Helvetica Neue", Helvetica, Arial, sans-serif;
-@navbar-nav-hover-background:                   #f5f5f5;
-@navbar-nav-hover-color:                        #444;
+@navbar-nav-hover-background:                   #afafaf;
+@navbar-nav-hover-color:                        #fafafa;
 @navbar-nav-onclick-background:                 #ddd;
-@navbar-nav-onclick-color:                      #444;
+@navbar-nav-onclick-color:                      #fafafa;
 @navbar-nav-active-background:                  #f5f5f5;
-@navbar-nav-active-color:                       #444;
+@navbar-nav-active-color:                       #fff;
 @navbar-nav-subtitle-font-size:                 10px;
 @navbar-nav-subtitle-offset:                    2px;
 
@@ -74,7 +73,6 @@
 
 .uk-navbar {
     background: @navbar-background;
-    color: @navbar-color;
     .hook-navbar;
 }
 
@@ -127,7 +125,6 @@
     /* 2 */
     color: @navbar-nav-color;
     font-size: @navbar-nav-font-size;
-    font-family: @navbar-nav-font-family;
     font-weight: @navbar-nav-font-weight;
     .hook-navbar-nav;
 }

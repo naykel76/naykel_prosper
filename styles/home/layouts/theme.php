@@ -21,17 +21,17 @@ include($this['path']->path('layouts:theme.config.php'));
 
 
     <?php if ($this['widgets']->count('toolbar-l + toolbar-r')) : ?>
-        <div class="tm-toolbar uk-clearfix uk-hidden-small" style="background: grey">
+    <div class="tm-toolbar uk-clearfix uk-hidden-small" style="background: grey">
 
-            <?php if ($this['widgets']->count('toolbar-l')) : ?>
-            <div class="uk-float-left"><?php echo $this['widgets']->render('toolbar-l'); ?></div>
-            <?php endif; ?>
+        <?php if ($this['widgets']->count('toolbar-l')) : ?>
+        <div class="uk-float-left"><?php echo $this['widgets']->render('toolbar-l'); ?></div>
+        <?php endif; ?>
 
-            <?php if ($this['widgets']->count('toolbar-r')) : ?>
-            <div class="uk-float-right"><?php echo $this['widgets']->render('toolbar-r'); ?></div>
-            <?php endif; ?>
+        <?php if ($this['widgets']->count('toolbar-r')) : ?>
+        <div class="uk-float-right"><?php echo $this['widgets']->render('toolbar-r'); ?></div>
+        <?php endif; ?>
 
-        </div>
+    </div>
     <?php endif; ?>
 
     <?php if ($this['widgets']->count('logo + headerbar')) : ?>
@@ -50,40 +50,38 @@ include($this['path']->path('layouts:theme.config.php'));
 
 
     <?php if ($this['widgets']->count('menu + search')) : ?>
-        <nav class="tm-navbar uk-navbar">
+    <nav class="tm-navbar uk-navbar">
 
-            <div class="container">
-                <?php if ($this['widgets']->count('menu')) : ?>
-                <?php echo $this['widgets']->render('menu'); ?>
-                <?php endif; ?>
+        <div class="container">
+            <?php if ($this['widgets']->count('menu')) : ?>
+            <?php echo $this['widgets']->render('menu'); ?>
+            <?php endif; ?>
 
-                <?php if ($this['widgets']->count('offcanvas')) : ?>
-                <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
-                <?php endif; ?>
+            <?php if ($this['widgets']->count('offcanvas')) : ?>
+            <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+            <?php endif; ?>
 
-                <?php if ($this['widgets']->count('search')) : ?>
-                <div class="uk-navbar-flip">
-                    <div class="uk-navbar-content uk-hidden-small"><?php echo $this['widgets']->render('search'); ?></div>
-                </div>
-                <?php endif; ?>
-
-                <?php if ($this['widgets']->count('logo-small')) : ?>
-                <div class="uk-navbar-content uk-navbar-center uk-visible-small"><a class="tm-logo-small" href="<?php echo $this['config']->get('site_url'); ?>"><?php echo $this['widgets']->render('logo-small'); ?></a></div>
-                <?php endif; ?>
+            <?php if ($this['widgets']->count('search')) : ?>
+            <div class="uk-navbar-flip">
+                <div class="uk-navbar-content uk-hidden-small"><?php echo $this['widgets']->render('search'); ?></div>
             </div>
+            <?php endif; ?>
 
-        </nav>
+            <?php if ($this['widgets']->count('logo-small')) : ?>
+            <div class="uk-navbar-content uk-navbar-center uk-visible-small"><a class="tm-logo-small" href="<?php echo $this['config']->get('site_url'); ?>"><?php echo $this['widgets']->render('logo-small'); ?></a></div>
+            <?php endif; ?>
+        </div>
+
+    </nav>
     <?php endif; ?>
-
-    <?php if ($this['widgets']->count('top-a')) : ?>
-        <section id="nk-top-a">
-            <div class="container">
-                <div class="<?php echo $grid_classes['top-a']; echo $display_classes['top-a']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
-                    <?php echo $this['widgets']->render('top-a', array('layout'=>$this['config']->get('grid.top-a.layout'))); ?>
-                </div>
+        
+    <section id="nk-top-a" class="uk-cover-background hero">
+        <div class="container">
+            <div class="<?php echo $grid_classes['top-a']; echo $display_classes['top-a']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin>
+                <?php echo $this['widgets']->render('top-a', array('layout'=>$this['config']->get('grid.top-a.layout'))); ?>
             </div>
-        </section>
-    <?php endif; ?>
+        </div>
+    </section>
 
     <?php if ($this['widgets']->count('top-b')) : ?>
         <section id="nk-top-b">
@@ -96,7 +94,7 @@ include($this['path']->path('layouts:theme.config.php'));
     <?php endif; ?>
 
 
-	<div class="container">
+	<div class="container" style="padding-top: 35px; padding-bottom: 35px;">
 
 		<?php if ($this['widgets']->count('main-top + main-bottom + sidebar-a + sidebar-b') || $this['config']->get('system_output', true)) : ?>
 		<div id="tm-middle" class="tm-middle uk-grid" data-uk-grid-match data-uk-grid-margin>

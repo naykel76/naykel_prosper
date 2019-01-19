@@ -750,13 +750,21 @@
             ]
         },
         {
+            "label": "Navbar",
+            "advanced": true,
+            "vars": [
+                "@navbar-*"
+            ]
+        },
+        {
             "label": "nk Styles",
             "vars": [
                 "@nk-color",
                 "@nk-primary-color",
                 "@nk-secondary-color",
                 "@nk-alt-color",
-                "@nk-footer-bg"
+                "@nk-header-background",
+                "@nk-footer-background"
             ]
         },
         {
@@ -770,7 +778,7 @@
                 "@global-contrast-color",
 
                 "@global-font-size",
-                "@global-line-height",
+                "@nk-line-height",
 
                 "@base-body-font-family",
                 "@base-heading-font-family"
@@ -951,13 +959,6 @@
             "advanced": true,
             "vars": [
                 "@nav-*"
-            ]
-        },
-        {
-            "label": "Navbar",
-            "advanced": true,
-            "vars": [
-                "@navbar-*"
             ]
         },
         {

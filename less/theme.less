@@ -1,17 +1,30 @@
-// Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+// NK NOTES and TO Do's
+/* 
+| - move section to the utilities for general use
+ */
 
 @import "uikit/uikit.less";
-@import "custom.less";
+@import "custom.less"; // load last to override defaults
+
+.bx{
+    background: #333;
+}
 
 #nk-top-a, #nk-top-b,
 #nk-bottom-a, #nk-bottom-b,
-#nk-footer{
+#nk-header,
+#nk-footer,
+.section{
     padding-top: @global-grid-gutter;
     padding-bottom: @global-grid-gutter; 
 }
 
+#nk-header{
+    background: @nk-header-background;
+}
+
 #nk-footer{
-    background: @nk-footer-bg;
+    background: @nk-footer-background;
     // text-align: center;
 }
 
@@ -21,6 +34,64 @@
     color: #FAFFFA;
     padding: 10px 0;
 }
+
+.hero{
+    background-image: url(../../../images/nk-samples/hero-sm.jpg);
+    height: 200px;
+}
+
+
+@media (min-width: @breakpoint-small) {
+
+ 
+}
+
+@media (min-width: @breakpoint-medium) {
+  .hero{
+        background-image: url(../../../images/nk-samples/hero-md.jpg);
+        height: 300px;
+    }
+}
+
+@media (min-width: @breakpoint-large) {
+   .hero{
+        background-image: url(../../../images/nk-samples/hero-lg.jpg);
+        height: 400px;
+    }
+}
+
+@media (min-width: @breakpoint-xlarge) {
+   .hero{
+        background-image: url(../../../images/nk-samples/hero-xl.jpg);
+        height: 500px;
+    }
+}
+
+// @media (max-width: @breakpoint-mini-max) {
+// @media (min-width: ) {
+// @media (min-width: @breakpoint-large) {
+// @media (min-width: @breakpoint-small) {
+// @media (min-width: ) {
+// @media (max-width: @breakpoint-medium-max) {
+// @media (min-width: @breakpoint-medium) and (max-width: @breakpoint-medium-max) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Layout
  ========================================================================== */
@@ -36,28 +107,6 @@
  */
 
 html { overflow-y: scroll; }
-
-/*
- * Blocks
- */
-
-.tm-toolbar,
-.tm-headerbar,
-.tm-navbar {
-    margin-top: @global-grid-gutter;
-    margin-bottom: @global-grid-gutter;
-}
-
-/* Only large screens */
-@media (min-width: @breakpoint-xlarge) {
-
-    .tm-headerbar,
-    .tm-navbar {
-        margin-top: @global-grid-gutter-large;
-        margin-bottom: @global-grid-gutter-large;
-    }
-
-}
 
 /* Only phones */
 @media (max-width: @breakpoint-small-max) {
@@ -98,9 +147,9 @@ html { overflow-y: scroll; }
  * Headerbar
  */
 
-.tm-headerbar .tm-logo { float: left; }
+#nk-header .tm-logo { float: left; }
 
-.tm-headerbar .uk-panel {
+#nk-header .uk-panel {
     max-width: 300px;
     margin-right: 0;
     float: right;
@@ -126,7 +175,7 @@ html { overflow-y: scroll; }
     position: absolute;
     top: 0;
     right: 0;
-    z-index: @global-z-index;
+    z-index: 1000;
     width: 20px;
     height: 20px;
     line-height: 20px;
